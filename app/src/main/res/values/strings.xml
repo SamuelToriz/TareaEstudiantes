@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">EstudiantesSamuel</string>
+    <string name="text_version">UdelP_v1.0</string>
+    <string name="text_home">Inicio</string>
+    <string name="text_detail">Detalle</string>
+    <string name="text_list">Lista</string>
+    <string name="text_list_view">Ver Lista detalle</string>
+    <string name="text_form_view">Ver formulario 2</string>
+    <string name="text_Exit">Salir</string>
+    <string name="text_myForm">Mi Formulario</string>
+    <string name="hint_name">Escribe tu nombre</string>
+    <string name="hint_lastName">Escribe tus apellidos</string>
+    <string name="text_unfinished_studies">Trunco</string>
+    <string name="text_university_intern">Pasante</string>
+    <string name="text_finished_studies">Titulado</string>
+    <string name="txt_Read">Leer</string>
+    <string name="txt_Sport">Deporte</string>
+    <string name="txt_Travel">Viajar</string>
+    <string name="text_image_description">Logo</string>
+    <string name="text_finalcial_assistance">Tiene asistencia financiera?</string>
+    <string name="text_ok">Aceptar</string>
+    <string name="btn_delete">Eliminar</string>
+    <string name="txt_Edit_Delete">Editar/Eliminar</string>
+    <string name="imgUdelp">Universidad del Pedregal</string>
+    <string name="btn_save">Save</string>
+</resources>
