@@ -61,7 +61,7 @@ class ListActivityStudent : AppCompatActivity()
             if(answer == true)
            {
                Toast.makeText(this@ListActivityStudent, "Estudiante eliminado", Toast.LENGTH_SHORT).show()
-               val adapter = ArrayAdapter<String>(this@ListActivityStudent, android.R.layout.simple_list_item_1, listStudent.getStringArray())
+               val adapter = ArrayAdapter<String>(this@ListActivityStudent, android.R.layout.simple_list_item_1, listStudent.getStringArrayE())
                binding.ltvListStudents.adapter = adapter
            }
             else

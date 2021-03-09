@@ -26,7 +26,7 @@ class Edit_DeleteActivity : AppCompatActivity()
         binding = ActivityEditDeleteBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        supportActionBar?.setTitle("Lista de Estudiantes")
+        supportActionBar?.setTitle("Editar Alumno")
 
         var id:Int = intent.getIntExtra(Constants.ID, -1)
 
@@ -58,7 +58,6 @@ class Edit_DeleteActivity : AppCompatActivity()
 
 
             binding.btnSave.setOnClickListener {
-                miDialogo(student.name).show()
                 if(binding.editTextPersonName.text.isNotEmpty() && binding.editTextPersonLastName.text.isNotEmpty() && binding.spnGender.selectedItemPosition!=0
                         && binding.rgbDegree.checkedRadioButtonId!=-1  ){
 
@@ -89,23 +88,15 @@ class Edit_DeleteActivity : AppCompatActivity()
 
                     //para el switch
                     student.financialAid = binding.stwFinancialAssistance.isChecked
-
                     val index = listStudent.edit(id,student)
-/*
-                    if (index >= 0)
-                    {
-                        Toast.makeText(this@Edit_DeleteActivity, "Estudiante guardado", Toast.LENGTH_SHORT).show()
-                        cleanControls()
 
-                    } else {
-                        Snackbar.make(it, "Estudiante NO guardado ", Snackbar.LENGTH_LONG).show()
-                    }
-*/
+                    miDialogo(student.name).show()
                 }
                 else
                 {
                     Snackbar.make(it, "Todos los campos son OBLIGATORIOS excepto Beca y Hobbies ", Snackbar.LENGTH_LONG).show()
                 }
+
 
             }
         }
@@ -120,7 +111,7 @@ class Edit_DeleteActivity : AppCompatActivity()
         miAlerta.setTitle("Confirmar")
         miAlerta.setMessage("Esta seguro??")
 
-        Toast.makeText(this@Edit_DeleteActivity, "$id", Toast.LENGTH_SHORT).show()
+       // Toast.makeText(this@Edit_DeleteActivity, "$id", Toast.LENGTH_SHORT).show()
         miAlerta.setPositiveButton("Si"){_,_ ->
             var answer = listStudent.edit(id, student)
 
@@ -146,7 +137,7 @@ class Edit_DeleteActivity : AppCompatActivity()
 
         return miAlerta.create()
     }
-    
+
 
     fun cleanControls()
     {
