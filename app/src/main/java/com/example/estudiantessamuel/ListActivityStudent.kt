@@ -36,7 +36,7 @@ class ListActivityStudent : AppCompatActivity()
 
             val student = listStudent.getStudent(position)
             miDialogo(position, student.name).show()
-            
+
         }
 
 

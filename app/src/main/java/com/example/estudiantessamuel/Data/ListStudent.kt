@@ -108,7 +108,7 @@ class ListStudent {
         val answerList = arrayListOf<String>()
         for((index, item)in listStudent.withIndex())
         {
-            answerList.add("${item.name}, ${item.lastName}")
+            answerList.add("${item.name}, ${item.lastName}, ${item.degree}, ${"Cuenta con beca: "} ${item.financialAid}")
         }
         return answerList.toTypedArray()
     }
