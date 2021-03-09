@@ -103,12 +103,22 @@ class ListStudent {
         return answer
     }
 
+    fun getStringArrayE():Array<String>
+    {
+        val answerList = arrayListOf<String>()
+        for((index, item)in listStudent.withIndex())
+        {
+            answerList.add("${item.name}, ${item.lastName},${" Nivel de estudios: "} ${item.degree}, ${" Cuenta con beca: "} ${item.financialAid}")
+        }
+        return answerList.toTypedArray()
+    }
+
     fun getStringArray():Array<String>
     {
         val answerList = arrayListOf<String>()
         for((index, item)in listStudent.withIndex())
         {
-            answerList.add("${item.name}, ${item.lastName}, ${item.degree}, ${"Cuenta con beca: "} ${item.financialAid}")
+            answerList.add("${item.name}, ${item.lastName}")
         }
         return answerList.toTypedArray()
     }

@@ -30,7 +30,7 @@ class Edit_DeleteActivity : AppCompatActivity()
 
         var id:Int = intent.getIntExtra(Constants.ID, -1)
 
-        if(id!=1)
+        if(id>-1)
         {
             var student = listStudent.getStudent(id)
 
@@ -146,6 +146,7 @@ class Edit_DeleteActivity : AppCompatActivity()
 
         return miAlerta.create()
     }
+    
 
     fun cleanControls()
     {
