@@ -23,4 +23,7 @@
     <string name="txt_Edit_Delete">Editar/Eliminar</string>
     <string name="imgUdelp">Universidad del Pedregal</string>
     <string name="btn_save">Save</string>
+    <string name="text_recycler">Recycler View</string>
+    <string name="txt_list_recycler">Ver Recycler View</string>
+    <string name="hint_date">Dar click para ingresar fecha</string>
 </resources>

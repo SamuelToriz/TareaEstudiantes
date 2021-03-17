@@ -10,6 +10,10 @@
         android:title="@string/txt_Edit_Delete"
         app:showAsAction="never"/>
 
+    <item android:id="@+id/itmRecyclerView"
+        android:title="@string/txt_list_recycler"
+        app:showAsAction="never"/>
+
     <item android:id="@+id/itmExit"
         android:title="@string/text_Exit"
         app:showAsAction="never"/>

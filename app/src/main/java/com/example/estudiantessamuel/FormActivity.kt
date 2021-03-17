@@ -1,5 +1,6 @@
 package com.example.estudiantessamuel
 
+import android.app.DatePickerDialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -8,6 +9,7 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.widget.AdapterView
+import android.widget.DatePicker
 import android.widget.Toast
 import androidx.core.view.isNotEmpty
 import com.example.estudiantessamuel.Data.ListStudent
@@ -86,6 +88,18 @@ class FormActivity : AppCompatActivity()
 
         }
 
+        binding.editDate.setOnClickListener{
+            var year = 2021
+            var month = 0
+            var day = 16
+
+            var dpd = DatePickerDialog(this@FormActivity, DatePickerDialog.OnDateSetListener { view, y, m, d ->
+
+            },year, month, day)
+
+            dpd.show()
+        }
+
 /*
         binding.spnGender.onItemSelectedListener = object : AdapterView.OnItemSelectedListener
         {
@@ -128,6 +142,10 @@ class FormActivity : AppCompatActivity()
 
             R.id.itmForm->{
                 val intent = Intent(this@FormActivity, ListActivityStudent::class.java)
+                startActivity(intent)
+            }
+            R.id.itmRecyclerView->{
+                val intent = Intent(this@FormActivity, RecyclerActivity::class.java)
                 startActivity(intent)
             }
 

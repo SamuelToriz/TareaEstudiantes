@@ -11,7 +11,6 @@ import org.w3c.dom.Entity
 class ListStudent {
 
 
-
     fun add(student: EntityStudent):Int
     {
         var answer=-1
@@ -124,17 +123,21 @@ class ListStudent {
     }
 
 
-    fun getEntityStudent():Array<EntityStudent>
-    {
-        return listStudent.toTypedArray()
-    }
-
     fun getStudent(index:Int):EntityStudent
     {
 
         return listStudent[index]
     }
 
+    fun getEntityStudent():Array<EntityStudent>
+    {
+        return listStudent.toTypedArray()
+    }
+
+    fun getEntityStudentArray() :Array<EntityStudent>
+    {
+        return listStudent.toTypedArray()
+    }
 
 
     companion object

@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/columpio_launcher"
         android:supportsRtl="true"
         android:theme="@style/Theme.EstudiantesSamuel">
-        <activity android:name=".ListActivityStudent"></activity>
+        <activity android:name=".RecyclerActivity"></activity>
+        <activity android:name=".ListActivityStudent" />
         <activity android:name=".Edit_DeleteActivity" />
         <activity android:name=".ListActivity" />
         <activity android:name=".DetailActivity" />
