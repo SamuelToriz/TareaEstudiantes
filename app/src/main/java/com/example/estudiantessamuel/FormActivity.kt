@@ -75,7 +75,9 @@ class FormActivity : AppCompatActivity()
                     Toast.makeText(this@FormActivity, "Estudiante guardado", Toast.LENGTH_SHORT).show()
                     cleanControls()
 
-                } else {
+                }
+                else
+                {
                     Snackbar.make(it, "Estudiante NO guardado ", Snackbar.LENGTH_LONG).show()
                 }
 

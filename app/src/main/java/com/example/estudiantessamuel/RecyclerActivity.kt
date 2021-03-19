@@ -21,13 +21,23 @@ class RecyclerActivity : AppCompatActivity()
 
         supportActionBar?.setTitle(R.string.text_recycler)
 
-        val list = listStudent.getEntityStudentArray()
+        buildRecyclerView()
+
+    }
+
+    override fun onRestart() {
+        super.onRestart()
+        buildRecyclerView()
+    }
+
+    fun buildRecyclerView()
+    {
+        val list = listStudent.getListStudentArray()
         val adapter = StudentAdapter(list, this@RecyclerActivity)
         val linearLayout = LinearLayoutManager(this@RecyclerActivity, LinearLayoutManager.VERTICAL, false)
 
         binding.rvwStudents.layoutManager = linearLayout
         binding.rvwStudents.setHasFixedSize(true)
         binding.rvwStudents.adapter = adapter
-
     }
 }

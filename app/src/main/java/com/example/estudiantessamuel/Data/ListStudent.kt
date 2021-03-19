@@ -139,6 +139,12 @@ class ListStudent {
         return listStudent.toTypedArray()
     }
 
+     //paso el maestro
+    fun getListStudentArray() : ArrayList<EntityStudent>
+    {
+        return listStudent
+    }
+
 
     companion object
     {
